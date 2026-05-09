@@ -1,0 +1,11 @@
+{
+  "name": "interviewflow",
+  "version": "1.0.0",
+  "description": "InterviewFlow – Candidate Evaluation & Hiring Management Platform",
+  "scripts": {
+    "install:all": "cd interviewflow-backend && npm install && cd ../interviewflow-frontend && npm install",
+    "dev:backend": "cd interviewflow-backend && npm run dev",
+    "dev:frontend": "cd interviewflow-frontend && npm run dev",
+    "build:frontend": "cd interviewflow-frontend && npm run build"
+  }
+}
