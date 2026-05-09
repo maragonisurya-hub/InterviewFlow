@@ -6,10 +6,9 @@ A full-stack MERN application where recruiters manage jobs and evaluate candidat
 
 ## Live Demo
 
-Frontend: https://your-frontend-link.netlify.app
+Frontend: https://interviewflow-surya.netlify.app
 
-Backend API: https://your-backend-link.onrender.com
-
+Backend API: https://interviewflow-production-7aa3.up.railway.app
 ---
 
 ## Tech Stack
@@ -101,3 +100,120 @@ interviewflow/
     ├── .env.example
     ├── package.json
     └── package-lock.json
+
+
+---
+
+## API Endpoints
+
+### Authentication
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | /api/auth/register | Register new user |
+| POST | /api/auth/login | Login user |
+| GET | /api/auth/me | Get current user |
+
+### Jobs
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /api/jobs | Get all jobs |
+| POST | /api/jobs | Create new job |
+| PUT | /api/jobs/:id | Update job |
+| DELETE | /api/jobs/:id | Delete job |
+
+### Applications
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | /api/applications | Apply for job |
+| GET | /api/applications/my | Candidate applications |
+| GET | /api/applications | Recruiter applications |
+| PUT | /api/applications/:id | Update application status |
+
+---
+
+## Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/maragonisurya-hub/InterviewFlow.git
+cd InterviewFlow
+```
+
+---
+
+### Backend Setup
+
+```bash
+cd interviewflow-backend
+npm install
+```
+
+Create `.env` file:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+NODE_ENV=development
+```
+
+Run backend:
+
+```bash
+npm run dev
+```
+
+---
+
+### Frontend Setup
+
+```bash
+cd interviewflow-frontend
+npm install
+```
+
+Create `.env` file:
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Run frontend:
+
+```bash
+npm run dev
+```
+
+---
+
+## Deployment
+
+### Frontend Deployment
+- Netlify
+
+### Backend Deployment
+- Railway
+
+### Database
+- MongoDB Atlas
+
+---
+
+## Future Improvements
+
+- Resume upload system
+- AI-based candidate scoring
+- Email notifications
+- Admin dashboard
+- Interview scheduling
+- Dark mode support
+
+---
+
+## Author
+
+### Maragoni Surya Prakash
+
+- GitHub: https://github.com/maragonisurya-hub
+- LinkedIn: Add your LinkedIn profile link
